@@ -1,26 +1,26 @@
 def main():
-    # фъйзъ дчебх мчшйад
-    with open("data.txt", "r") as f:
-        # чшйаъ дщешеъ едошъп мосфшйн щмойн
+    # ГґГєГ©Г§Гє Г¤Г·ГҐГЎГµ Г¬Г·ГёГ©Г Г¤
+    with open("data3.txt", "r") as f:
+        # Г·ГёГ©Г Гє Г¤Г№ГҐГёГҐГє ГҐГ¤Г®ГёГєГЇ Г¬Г®Г±ГґГёГ©Г­ Г№Г¬Г®Г©Г­
         numbers = [int(line.strip()) for line in f if line.strip()]
 
-    # бгйчд щдчебх айре шйч
+    # ГЎГЈГ©Г·Г¤ Г№Г¤Г·ГҐГЎГµ Г Г©Г°ГҐ ГёГ©Г·
     if not numbers:
         print("file empty.")
         return
 
-    # аъзем тшлй ойрйоен еочсйоен мтшк дшащеп
+    # Г ГєГ§ГҐГ¬ ГІГёГ«Г© Г®Г©Г°Г©Г®ГҐГ­ ГҐГ®Г·Г±Г©Г®ГҐГ­ Г¬ГІГёГЄ Г¤ГёГ Г№ГҐГЇ
     minimum = numbers[0]
     maximum = numbers[0]
 
-    # отбш тм щаш досфшйн етглеп тшлйн
+    # Г®ГІГЎГё ГІГ¬ Г№Г Гё Г¤Г®Г±ГґГёГ©Г­ ГҐГІГЈГ«ГҐГЇ ГІГёГ«Г©Г­
     for num in numbers[1:]:
         if num < minimum:
             minimum = num
         if num > maximum:
             maximum = num
 
-    # дгфсъ дъецад
+    # Г¤ГЈГґГ±Гє Г¤ГєГҐГ¶Г Г¤
     print(f"min={minimum}")
     print(f"max={maximum}")
 
